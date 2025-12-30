@@ -1,5 +1,3 @@
-console.log("funcionadate")
-
 const date = document.getElementById("date");
 const line = document.getElementById("line");
 
@@ -29,7 +27,7 @@ function eternalTime() {
       return "Only in death does duty end.";
   }}
 
-line.innerHTML = refreshLine();
+line.innerHTML = refreshLine(hours);
 
 const pad = n => String(n).padStart(2, "0");
 

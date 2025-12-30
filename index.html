@@ -6,7 +6,7 @@
     <title>Landing</title>
     <link rel="stylesheet" href="css/styles.css"> 
 </head>
-<body style = "background-image: url(./css/img/bt1.webp);">
+<body id="body">
     <header> 
     <nav class="nav">  
         <a href="date.html">DATE</a>
@@ -16,13 +16,41 @@
     </nav>     
         
     </header>
-    <h1>landing</h1>
-    <h2 id="date"></h2>
-    <h4 id="line"></h4>
+    
+    <section class="date-section">
+    <div id="date" class="date"></div>
+    <h4 id="line" class="line2"></h4>
+   </section>
+
+    <section class="meteo-section">
+      <div id="date"></div>
+    <div id="weather-info" class="weather-info"></div>   
+    <ul id="forecast-info" class="forecast-info"></ul>     
+    </section>   
+
+    <section class="link-section">                     
+            <label for="inputName">Name of the link</label><textarea id="inputName"></textarea>
+            <label for="inputLink">The link itself</label><textarea id="inputLink"></textarea>
+            
+            <button id="btnsubmit">SUBMIT</button>
+            <button id="btnclear">CLEAR ALL</button>
+            
+            <ul id="linksList"></ul>
+     </section>
+
+    <section class="pass-section">
+        <div id="pass" class="passwordForm">SECRET CODE<textarea></textarea></div>
+        <input type="number" id="length" min="12" max="50" value="12"/>
+        <button id="btnPass">GENERATE SECRET CODE</button>
+    </section>
+    
  
     
 <script src="./js/script.js"></script>
+<script src="./js/scriptlink.js"></script> 
 <script src="./js/scriptdate.js"></script> 
+<script src="./js/scriptmeteo.js"></script> 
+<script src="./js/scriptpass.js"></script>   
 
 
 </body>

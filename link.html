@@ -6,33 +6,32 @@
     <title>Link</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style = "background-image: url(./css/img/bt3.jpg);">
+<body id="body">
     <header> 
     <nav class="nav">  
         <a href="index.html">INDEX</a>
-        <a href="date.html">DATE</a>
-        <a href="link.html">LINK</a>
+        <a href="date.html">DATE</a>        
         <a href="meteo.html">METEO</a>
         <a href="pass.html">PASS</a>
     </nav>     
         
     </header>
 
-    <h1>link</h1>
+    
     <h2>
-        <section>
-            <ul>            
-                <li id="inputName"><label>Name of the link</label><textarea></textarea></li>
-                <li id="link"><label>The link itself</label><textarea></textarea></li> 
-                <li id="showName"><textarea></textarea></li>
-                <li id="showLink"><textarea></textarea></li>               
-            </ul>
-
-            <button id = "btnsubmit" class="button">SUBMIT<imput type="submit"></button>
-        </section>
+     <section class="link-section">                      
+            <label for="inputName">Name of the link</label><textarea id="inputName"></textarea>
+            <label for="inputLink">The link itself</label><textarea id="inputLink"></textarea>
+            
+            <button id="btnsubmit">SUBMIT</button>
+            <button id="btnclear">CLEAR ALL</button>
+            
+            <ul id="linksList"></ul>
+     </section>
     </h2>
     
 
+    <script src="./js/script.js"></script>
     <script src="./js/scriptlink.js"></script>   
 
     

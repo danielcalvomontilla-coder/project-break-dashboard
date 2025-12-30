@@ -6,21 +6,25 @@
     <title>Meteo</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style = "background-image: url(./css/img/bt4.jpg);">
+<body id="body">
     <header> 
     <nav class="nav">  
       <a href="index.html">INDEX</a>
         <a href="date.html">DATE</a>
-        <a href="link.html">LINK</a>
-        <a href="meteo.html">METEO</a>
+        <a href="link.html">LINK</a>       
         <a href="pass.html">PASS</a>
     </nav>     
         
     </header>
 
-<body>
-    <h1>meteo</h1>
+    <section class="meteo-section">
+      <div id="date"></div>
+    <div id="weather-info" class="weather-info"></div>   
+    <ul id="forecast-info" class="forecast-info"></ul>     
+    </section>   
+    
 
+    <script src="./js/script.js"></script>
     <script src="./js/scriptmeteo.js"></script>   
     
 </body>

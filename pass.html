@@ -6,26 +6,27 @@
     <title>Pass</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style = "background-image: url(./css/img/bt5.jpeg);">
+<body id="body">
     <header> 
     <nav class="nav">  
         <a href="index.html">INDEX</a>
         <a href="date.html">DATE</a>
         <a href="link.html">LINK</a>
-        <a href="meteo.html">METEO</a>
-        <a href="pass.html">PASS</a>
+        <a href="meteo.html">METEO</a>        
     </nav>     
         
     </header>
     
-    <h1>prueba</h1>
-    <section>
-        <div id="pass" class="passwordForm">aqui sale la contraseña<textarea></textarea></div>
+    
+    <section class="pass-section">
+        <div id="pass" class="passwordForm">SECRET CODE<textarea></textarea></div>
+        <input type="number" id="length" min="12" max="50" value="12"/>
         <button id="btnPass">GENERATE SECRET CODE</button>
     </section>
     
     
 
+    <script src="./js/script.js"></script>
     <script src="./js/scriptpass.js"></script>   
     
 </body>
